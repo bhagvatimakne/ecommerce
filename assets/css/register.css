@@ -1,0 +1,34 @@
+/* Attractive register page styles (keep consistent with login) */
+:root{
+    --accent-1:#ff7eb3;
+    --accent-2:#65d6ff;
+    --card:#ffffff;
+    --muted:#6b7280;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: linear-gradient(135deg,var(--accent-1),var(--accent-2));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px;
+    color:#111827;
+}
+.register-wrapper{width:100%;max-width:520px}
+.card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 10px 30px rgba(11,22,50,0.12);border:1px solid rgba(16,24,40,0.04)}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.brand h1{font-size:20px;margin:0}
+.lead{color:var(--muted);font-size:14px;margin-bottom:14px}
+form .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{margin-bottom:12px}
+input[type=text],input[type=email],input[type=password]{width:100%;padding:12px 14px;border-radius:8px;border:1px solid rgba(15,23,42,0.06);background:#fbfdff;font-size:15px}
+input::placeholder{color:#9ca3af}
+.full{grid-column:1/-1}
+.btn{width:100%;padding:12px 14px;border-radius:10px;border:0;font-weight:600;color:white;background:linear-gradient(90deg,#6a11cb,#2575fc);cursor:pointer;box-shadow:0 6px 18px rgba(39,38,49,0.12);transition:transform .12s ease}
+.btn:hover{transform:translateY(-2px)}
+.meta{margin-top:12px;text-align:center;color:var(--muted);font-size:14px}
+.meta a{color:#111827;text-decoration:none;font-weight:600}
+@media (max-width:520px){.register-wrapper{padding:0 10px}.card{padding:20px}.form-grid{grid-template-columns:1fr}}
