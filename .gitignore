@@ -1,0 +1,60 @@
+# Environment and Configuration
+.env
+.env.local
+config/db.php
+config/session.php
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Uploaded Files and Temporary
+admin/upload/
+*.log
+*.tmp
+tmp/
+temp/
+
+# Database backups
+*.sql
+*.sql.gz
+backup/
+database/
+
+# Node/Package Manager (if used)
+node_modules/
+package-lock.json
+yarn.lock
+
+# PHP
+vendor/
+composer.lock
+.php_cs.cache
+
+# Python (if used)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Cache
+.cache/
+.pytest_cache/
